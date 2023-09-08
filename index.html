@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bulma Test Project 2 Yannis</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  </head>
+  <body>
+
+
+
+<!--Css Styling-->
+    
+    <style> 
+        
+      
+        .hero-head{
+          padding-top: 115px;
+        }
+
+        .hero-body{
+          position: relative;
+          height: 1080px;
+          padding: 0;
+          
+        }
+
+        .tile{
+          margin: 20px 10px;
+          padding: 10px;
+        }
+
+        .hero-video{
+          height: auto;
+          padding: 0;
+        }
+        
+        .section{
+          margin-top: 115px;
+        }
+      
+        .footer {
+        bottom: 0;
+        width: 100%
+        
+        }
+   
+
+              /* Media Queries */
+      
+      /* Mobile */
+      @media (max-width: 767px) {
+        .tile {
+          margin: 50px 20px 30px 30px;
+        }
+      
+        .hero-body {
+         display: none;
+        }
+      
+      }
+      
+     /* Tablet */
+      @media (min-width: 768px) and (max-width: 1023px) {
+        .tile {
+        margin: 0px 100px 100px;  
+        }
+      
+        .hero-body {
+        display: none;
+        }
+      
+      
+      }
+      
+     /* Desktop */
+      @media (min-width: 1024px) {
+        .tile {
+          margin: 0px 100px 100px
+           
+        }
+
+        .hero-head {
+        padding-bottom: 115px;
+        }
+
+      }
+     /* Full HD */
+      @media (min-width: 1920px) and (min-height: 1080px) {
+        .tile {
+        margin: 100px 100px 100px
+        }
+
+        .hero-head {
+        padding-bottom: 115px;
+        }
+
+    }
+    </style>
+
+<!--/Css Styling-->
+
+
+
+ <!--Navbar-->
+
+       <nav class="navbar has-shadow" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="#"> 
+            <figure class="image">
+            <img class="is-rounded" src="./Assetts/Images/crane.svg" alt="brand-logo" style="max-height: 65px; outline: 1px solid rgba(0, 0, 0, 0.295);">
+          </figure>
+          </a>
+          <div class="navbar-item">
+            <a class="title is-size-4 has-text-black" href="#">MG Freight</a>
+          </div>
+          <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navMenu">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+          </a>
+        </div>
+      
+        <div class="navbar-menu" id="navMenu">
+          <div class="navbar-end">
+            <div class="navbar-item is-hidden-touch">
+              <a class="title is-size-5 has-text-primary" href="#">Our Standards</a>
+            </div>
+            <div class="navbar-item has-dropdown is-hoverable is-hidden-desktop">
+              <a class="navbar-link" href="#">Our Standards</a>
+             </div>
+            <a class="navbar-item is-hidden-touch" href="#"><i class="fas fa-user"></i></a>
+            <a class="navbar-item is-hidden-touch" href="#"><i class="fas fa-shopping-cart"></i></a> 
+          </div>
+         </div>
+       </nav>
+
+       <script src="script.js"></script>
+
+<!--/Navbar-->
+
+
+
+<!--Header-->
+
+        <header class="hero-head">
+          <div class="container has-text-centered">
+            <h1 class="title">
+              Seamless Managing Procedure
+            </h1>
+            <p class="subtitle">
+              The service provider you can <strong>Trust</strong>!
+            </p>
+          </div>
+        </header>
+
+      
+
+    <div class="hero-body py-0 px-0">
+
+      <div class="hero-video">
+        <video poster="./Assetts/Images/cruise.svg" playsinline autoplay muted loop>
+          <source src="./Assetts/videos/container_ship_-_23215 (1080p).mp4" type="video/mp4">
+        </video>
+      </div>
+    
+    </div>
+
+ <!--/Header-->
+
+
+<!--Hidden Image- visible for Mobile Devices-->
+<div class="container my-6">
+    <div class="is-hidden-desktop">
+      <figure>
+      <img src="./Assetts/Images/port1.jpg" alt="Mobile Image">
+      </figure>
+    </div>
+</div>
+<!--/Hidden Image-->
+
+
+
+<!--Features-Tiles-->
+
+<div class="tile is-ancestor">
+  <div class="tile is-3 is-vertical is-parent">
+    <div class="tile is-child box">
+      <p class="title">Efficient Supply Chain</p>
+      <p>Streamline your procurement process with our powerful SaaS platform. Connect seamlessly with trusted suppliers, ensuring a reliable supply chain for your ship operations. From fuel and spare parts to equipment and services, access a comprehensive range of products to keep your vessels sailing smoothly.
+      </p>
+    </div>
+    <div class="tile is-child box">
+      <p class="title">Optimized Cost Savings</p>
+      <p>Unlock significant cost savings for your ship operations by leveraging our procurement solutions. Our platform enables you to compare quotes from multiple suppliers, negotiate contracts, and find the best deals tailored to your specific needs. Maximize your budget while maintaining the highest standards of quality and efficiency.
+      </p>
+    </div>
+  </div>
+  <div class="tile is-parent">
+    <div class="tile is-child box">
+      <p class="title">Trusted Supplier Network</p>
+      <p>Join our extensive network of reputable suppliers dedicated to serving the maritime industry. </p>
+      <p>Gain access to a wide range of qualified and vetted providers, ensuring that you collaborate only with trusted partners.</p>
+      <br>
+      <p> Benefit from our transparent rating system and reviews to make informed decisions and build long-lasting supplier relationships.</p>
+      <br>
+      <p>By joining our network, you gain access to a wide range of qualified and vetted providers who are dedicated to serving the unique needs of the maritime sector. We prioritize transparency and accountability, ensuring that every supplier in our network adheres to stringent quality standards.</p>
+      <p>Our platform provides you with the tools to make informed decisions. You can explore detailed profiles of each supplier, including their expertise, certifications, and track record. Additionally, benefit from our transparent rating system and read reviews from other ship owners to ensure you're partnering with the best fit for your requirements.</p>
+      <br>
+      <p>Building long-lasting supplier relationships is essential for the success of your ship operations. With our Trusted Supplier Network, you can forge partnerships based on trust, reliability, and mutual growth. Collaborate confidently, knowing that you have access to a network of suppliers who are committed to delivering exceptional products and services to support your business goals.</p>
+  
+    </div>
+  </div>
+</div>
+
+<!--/Features-Tiles-->
+
+
+
+<!--Footer-->
+
+<footer class="footer">
+  <div class="content has-text-centered">
+    <p>
+      <strong>MG Freight</strong> &copy; 2023. All rights reserved.
+    </p>
+    <p>
+      Connect with us: <br>
+      <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+    </p>
+    
+  </div>
+</footer>
+
+<!--Footer-->
+    
+
+  
+  </body>
+</html>
